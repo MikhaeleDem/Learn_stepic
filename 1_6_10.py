@@ -2,12 +2,12 @@ from selenium import webdriver
 import time
 
 try:
-    link = "http://suninjuly.github.io/registration2.html"
+    link = "http://suninjuly.github.io/registration1.html"
     browser = webdriver.Chrome()
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    time.sleep(2)
+    time.sleep(5)
     input1 = browser.find_element_by_css_selector("input[placeholder='Input your first name']")
     input1.send_keys("Михаил")
     input2 = browser.find_element_by_css_selector("input[placeholder='Input your last name']")
